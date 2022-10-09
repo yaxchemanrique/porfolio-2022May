@@ -16,13 +16,11 @@ function loop() {
         if (!isDeleting && j <= messagesArray[i].length) {
             currentMessage.push(messagesArray[i][j]);
             j++
-            console.log('add a letter', j);
         }
         
         if (isDeleting && j <= messagesArray[i].length) {
             currentMessage.pop(messagesArray[i][j]);
             j--
-            console.log('remove letter', j);
         }
 
         if (j == messagesArray[i].length){
@@ -56,13 +54,50 @@ loop();
 
 
 
-const card = document.getElementsByClassName('card');
-let containsHtml = card.classList.contains('html');
-let containsCss = card.classList.contains('css');
-let containsJs = card.classList.contains('javascript');
-let containsBootstrap = card.classList.contains('bootstrap');
-let containsFigma = card.classList.contains('figma');
-let containsXd = card.classList.contains('xd');
+const card = [...document.getElementsByClassName('card')];
+let radiotags = document.querySelector('.radio-tags');
 
+function filteringFunction(filter) {
+    for (let i = 0; i < card.length; i++) {
+        card[i].classList.remove('hide');
+        if(!card[i].classList.contains(filter)){
+            card[i].classList.add('hide');
+        }
+    }
+}
 
+radiotags.addEventListener('change', (e)=> {
+    switch (e.target.id) {
+        case 'all':
+            filteringFunction('card');
+            break;
+        case 'html':
+            filteringFunction('html');
+            break;
+        case 'css':
+            filteringFunction('css');
+            break;
+        case 'javascript':
+            filteringFunction('javascript');
+            break;
+        case 'bootstrap':
+            filteringFunction('bootstrap');
+            break;
+        case 'figma':
+            filteringFunction('figma');
+            break;
+        case 'xd':
+            filteringFunction('xd');
+            break;
+        case 'react':
+            filteringFunction('react');
+            break;
+        case 'api':
+            filteringFunction('api');
+            break;
+    
+        default:
+            break;
+    }
+});
 

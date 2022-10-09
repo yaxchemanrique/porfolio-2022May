@@ -45,8 +45,8 @@
             <p class="description" id="description">I'm a begginer web <span id="typing-text"></span>
             </p>
             <div class="buttons">
-                <a href="#" class="btn btn-primary">See my projects</a>
-                <a href="#" class="btn btn-secondary">Contact me</a>
+                <a href="#projects" class="btn btn-primary">See my projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact me</a>
             </div>            
         </div>
     </main>
@@ -56,19 +56,23 @@
         <p class="subtitle">Tecnologies</p>
         <form class="radio-tags" action="">
             <input type="radio" id="all" name="tecnologies" value="all">
-            <label onclick="filterCards('all')" for="all">See All</label>
+            <label for="all">See All</label>
             <input type="radio" id="html" name="tecnologies" value="html">
-            <label onclick="filterCards('html')" for="html">HTML</label>
+            <label for="html">HTML</label>
             <input type="radio" id="css" name="tecnologies" value="css">
-            <label onclick="filterCards('css')" for="css">CSS</label>
+            <label for="css">CSS</label>
             <input type="radio" id="javascript" name="tecnologies" value="javascript">
-            <label onclick="filterCards('javascript')"  for="javascript">Javascript</label>
+            <label  for="javascript">Javascript</label>
             <input type="radio" id="bootstrap" name="tecnologies" value="bootstrap">
-            <label onclick="filterCards('bootstrap')" for="bootstrap">Bootstrap</label>
-            <input type="radio" id="Figma" name="tecnologies" value="Figma">
-            <label onclick="filterCards('figma')" for="Figma">Figma</label>
+            <label for="bootstrap">Bootstrap</label>
+            <input type="radio" id="figma" name="tecnologies" value="figma">
+            <label for="figma">Figma</label>
             <input type="radio" id="xd" name="tecnologies" value="xd">
-            <label onclick="filterCards('xd')" for="xd">Adobe XD</label>
+            <label for="xd">Adobe XD</label>
+            <input type="radio" id="react" name="tecnologies" value="react">
+            <label for="react">React JS</label>
+            <input type="radio" id="api" name="tecnologies" value="api">
+            <label for="api">API</label>
         </form>
         <div class="card-container">
             <div class="card html css bootstrap figma">
@@ -100,7 +104,7 @@
             <div class="card html css">
                 <div class="card-text">
                     <h2 class="card-title">Fylo</h2>
-                    <p class="card-description">Desarrollo de proyecto Fylo de mentor.io</p>
+                    <p class="card-description">Desarrollo de proyecto Fylo usando el diseño provisto por <a href="https://www.frontendmentor.io/">Frontend Mentor</a></p>
                 </div>
                 <div class="card-tags">
                     <ul class="card-tecnologies">
@@ -125,7 +129,7 @@
             <div class="card html css">
                 <div class="card-text">
                     <h2 class="card-title">Clon de Netflix</h2>
-                    <p class="card-description">Desarrollo de proyeto por DEV. F.</p>
+                    <p class="card-description">Desarrollo de proyeto para comenzar el estudio de animaciones en CSS.</p>
                 </div>
                 <div class="card-tags">
                     <ul class="card-tecnologies">
@@ -134,16 +138,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="card html css bootstrap figma">
+            <div class="card react api figma">
                 <div class="card-text">
-                    <h2 class="card-title">Proyecto Inventado</h2>
-                    <p class="card-description">Ya no tenía más proyectos pero no quería dejar sólo 5, se veía muy solo</p>
+                    <h2 class="card-title">My Videos</h2>
+                    <p class="card-description">Aplicación desarrollada con React JS en donde se consume la API de <a href="https://www.tvmaze.com/api">TV MAZE</a>. En ésta se puede observar un input de texto para realizard búsqueda de peliculas y series; una vez seleccionada la serie se puede obtener más información de ella, como las temporada, capítulos por temporada y el cast.</p>
                 </div>
                 <div class="card-tags">
                     <ul class="card-tecnologies">
-                        <li class="card-tag">HTML</li>
-                        <li class="card-tag">CSS</li>
-                        <li class="card-tag">Bootstrap</li>
+                        <li class="card-tag">React JS</li>
+                        <li class="card-tag">API</li>
                         <li class="card-tag">Figma</li>
                     </ul>
                 </div>

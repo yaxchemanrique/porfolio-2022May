@@ -5,6 +5,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: "Nunito", sans-serif;
@@ -282,4 +285,8 @@ small {
 
 footer span {
 	opacity: 0.6;
+}
+
+.hide {
+	display: none;
 }
